@@ -80,8 +80,8 @@ COMMON_26_PHONE_PACKAGES = [
 	"adaptation-hybris-common (= ${binary:Version})",
 	"adaptation-hybris-phone (= ${binary:Version})",
 	"adaptation-hybris-api%(level)s (= ${binary:Version})",
-	"ofono-ril-binder-plugin",
-	"ofono-config-ril-binder",
+	"ofono-binder-plugin",
+	"ofono-configs-binder-common",
 	"pulseaudio-modules-droid-hidl",
 	"audiosystem-passthrough",
 ]
@@ -89,7 +89,7 @@ COMMON_26_PHONE_PACKAGES = [
 # Common phone packages for dual sim devices for api levels 26+ (8+)
 COMMON_26_DUAL_SIM_PACKAGES = [
 	"adaptation-hybris-api%(level)d-phone (= ${binary:Version})",
-	"ofono-config-ril-binder-dual-sim",
+	"ofono-configs-binder-dual-sim",
 ]
 
 SUPPORTED_APILEVELS = {
