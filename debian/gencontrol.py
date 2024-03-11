@@ -35,10 +35,6 @@ COMMON_PHOSH = [
 	"phosh-config-hwcomposer",
 ]
 
-COMMON_CUTIE = [
-	"cutie-shell-config-hybris",
-]
-
 # Common packages for phones
 COMMON_PHONE_PACKAGES = [
 	"adaptation-hybris-common (= ${binary:Version})",
@@ -100,7 +96,6 @@ SUPPORTED_APILEVELS = {
 		"phone"    : COMMON_PHONE_PACKAGES,
 		"devtools" : COMMON_DEVTOOLS_PACKAGES,
 		"phosh"    : COMMON_PHOSH,
-		"cutie"    : COMMON_CUTIE,
 	},
 	28 : {
 		"standard"       : COMMON_16_PACKAGES + COMMON_16_29_PACKAGES + COMMON_26_PACKAGES,

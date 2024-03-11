@@ -72,13 +72,6 @@ Description: Base metapackage for adaptation-hybris adaptations (phosh variant)
  This package depends on the required packages
  to allow Droidian work on Android devices.
 
-Package: adaptation-hybris-cutie
-Architecture: any
-Depends: cutie-shell-config-hybris
-Description: Base metapackage for adaptation-hybris adaptations (cutie variant)
- This package depends on the required packages
- to allow Droidian work on Android devices.
-
 Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
 Package: adaptation-hybris-api28
