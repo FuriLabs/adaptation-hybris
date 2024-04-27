@@ -1,15 +1,17 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: adaptation-hybris
-Source: https://github.com/droidian/adaptation-hybris
+Source: https://github.com/furilabs/adaptation-hybris
 
 Files: *
 Copyright: 2020 Giuseppe "r3vn" Corti <giuseppe.corti@protonmail.com>
            2022 Eugenio Paolantonio (g7) <me@medesimo.eu>
+           2024 Bardia Moshiri <fakeshell@bardia.tech>
 License: BSD-3-clause
 
 Files: debian/*
 Copyright: 2020 Giuseppe "r3vn" Corti <giuseppe.corti@protonmail.com>
            2022 Eugenio Paolantonio (g7) <me@medesimo.eu>
+           2024 Bardia Moshiri <fakeshell@bardia.tech>
 License: BSD-3-clause
 
 License: BSD-3-clause

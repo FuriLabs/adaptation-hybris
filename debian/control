@@ -2,13 +2,13 @@
 # new dependencies
 
 Source: adaptation-hybris
-Maintainer: Giuseppe Corti (r3vn) <giuseppe.corti@protonmail.com>
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
 Section: misc
 Priority: optional
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.5.0.3
-Vcs-Browser: https://github.com/droidian/adaptation-hybris
-Vcs-Git: https://github.com/droidian/adaptation-hybris
+Vcs-Browser: https://github.com/furilabs/adaptation-hybris
+Vcs-Git: https://github.com/furilabs/adaptation-hybris
 
 Package: adaptation-hybris
 Architecture: any
