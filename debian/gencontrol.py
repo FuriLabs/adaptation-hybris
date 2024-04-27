@@ -7,7 +7,7 @@
 
 # Common packages for every api level
 COMMON_PACKAGES = [
-	"droidian-quirks-writable-image",
+	"furios-quirks-writable-image",
 	"android-base-passwd",
 	"android-base-files",
 	"udev",
@@ -16,14 +16,14 @@ COMMON_PACKAGES = [
 	"libhybris-utils",
 	"udev-config-hybris",
 	"hadess-sensorfw-proxy",
-	"droidian-quirks-hybris-gl",
-	"droidian-quirks-qt-force-gles",
-	"droidian-quirks-tls-padding",
-	"droidian-quirks-xtables-legacy",
+	"furios-quirks-hybris-gl",
+	"furios-quirks-qt-force-gles",
+	"furios-quirks-tls-padding",
+	"furios-quirks-xtables-legacy",
 	"gstreamer1.0-droid",
 	"package-sideload",
 	"flash-bootimage",
-	"droidian-quirks-device",
+	"furios-quirks-device",
 	"flashlightd",
 	"flatpak-hybris",
 	"flatpak-extension-gl-hybris",
@@ -56,7 +56,7 @@ COMMON_DEVTOOLS_PACKAGES = [
 COMMON_16_PACKAGES = [
 	"adaptation-hybris-common (= ${binary:Version})",
 	"pulseaudio-config-droid",
-	"droidian-quirks-api%(level)d",
+	"furios-quirks-api%(level)d",
 ]
 
 # Common packages for api levels 16 through 29 (4.1 to 29)
@@ -159,8 +159,8 @@ if __name__ == "__main__":
 						"package" : "%(basepkg)s-%(variant)s" % subs if variant != "standard" else subs["basepkg"],
 						"depends" : ",\n         ".join([dep % subs for dep in depends]),
 						"summary" : "Base metapackage for %(basepkg)s adaptations (%(variant)s variant)" % subs,
-						"description" : " This package depends on the required packages\n to allow Droidian work on API %d devices." % level
+						"description" : " This package depends on the required packages\n to allow FuriOS work on API %d devices." % level
 						                if level > 0 else
-						                " This package depends on the required packages\n to allow Droidian work on Android devices."
+						                " This package depends on the required packages\n to allow FuriOS work on Android devices."
 					}
 				)

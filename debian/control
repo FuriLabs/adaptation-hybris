@@ -20,7 +20,7 @@ Description: Base metapackage for adaptation-hybris adaptations (transitional pa
 
 Package: adaptation-hybris-common
 Architecture: any
-Depends: droidian-quirks-writable-image,
+Depends: furios-quirks-writable-image,
          android-base-passwd,
          android-base-files,
          udev,
@@ -29,14 +29,14 @@ Depends: droidian-quirks-writable-image,
          libhybris-utils,
          udev-config-hybris,
          hadess-sensorfw-proxy,
-         droidian-quirks-hybris-gl,
-         droidian-quirks-qt-force-gles,
-         droidian-quirks-tls-padding,
-         droidian-quirks-xtables-legacy,
+         furios-quirks-hybris-gl,
+         furios-quirks-qt-force-gles,
+         furios-quirks-tls-padding,
+         furios-quirks-xtables-legacy,
          gstreamer1.0-droid,
          package-sideload,
          flash-bootimage,
-         droidian-quirks-device,
+         furios-quirks-device,
          flashlightd,
          flatpak-hybris,
          flatpak-extension-gl-hybris,
@@ -44,7 +44,7 @@ Depends: droidian-quirks-writable-image,
          flatpak-extension-gl-hybris-droidian-workarounds
 Description: Base metapackage for adaptation-hybris adaptations (common variant)
  This package depends on the required packages
- to allow Droidian work on Android devices.
+ to allow FuriOS work on Android devices.
 
 Package: adaptation-hybris-phone
 Architecture: any
@@ -56,7 +56,7 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          lineageos-apn-conf
 Description: Base metapackage for adaptation-hybris adaptations (phone variant)
  This package depends on the required packages
- to allow Droidian work on Android devices.
+ to allow FuriOS work on Android devices.
 
 Package: adaptation-hybris-devtools
 Architecture: any
@@ -65,14 +65,14 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          hybris-usb
 Description: Base metapackage for adaptation-hybris adaptations (devtools variant)
  This package depends on the required packages
- to allow Droidian work on Android devices.
+ to allow FuriOS work on Android devices.
 
 Package: adaptation-hybris-phosh
 Architecture: any
 Depends: phosh-config-hwcomposer
 Description: Base metapackage for adaptation-hybris adaptations (phosh variant)
  This package depends on the required packages
- to allow Droidian work on Android devices.
+ to allow FuriOS work on Android devices.
 
 Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
@@ -80,13 +80,13 @@ Package: adaptation-hybris-api28
 Architecture: any
 Depends: adaptation-hybris-common (= ${binary:Version}),
          pulseaudio-config-droid,
-         droidian-quirks-api28,
+         furios-quirks-api28,
          pulseaudio-modules-droid-jb2q,
          bluebinder,
          timekeeper
 Description: Base metapackage for adaptation-hybris-api28 adaptations (standard variant)
  This package depends on the required packages
- to allow Droidian work on API 28 devices.
+ to allow FuriOS work on API 28 devices.
 
 Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
@@ -101,7 +101,7 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          audiosystem-passthrough
 Description: Base metapackage for adaptation-hybris-api28 adaptations (phone variant)
  This package depends on the required packages
- to allow Droidian work on API 28 devices.
+ to allow FuriOS work on API 28 devices.
 
 Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
@@ -111,7 +111,7 @@ Depends: adaptation-hybris-api28-phone (= ${binary:Version}),
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api28 adaptations (phone-dual-sim variant)
  This package depends on the required packages
- to allow Droidian work on API 28 devices.
+ to allow FuriOS work on API 28 devices.
 
 Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
@@ -119,13 +119,13 @@ Package: adaptation-hybris-api29
 Architecture: any
 Depends: adaptation-hybris-common (= ${binary:Version}),
          pulseaudio-config-droid,
-         droidian-quirks-api29,
+         furios-quirks-api29,
          pulseaudio-modules-droid-jb2q,
          bluebinder,
          timekeeper
 Description: Base metapackage for adaptation-hybris-api29 adaptations (standard variant)
  This package depends on the required packages
- to allow Droidian work on API 29 devices.
+ to allow FuriOS work on API 29 devices.
 
 Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
@@ -140,7 +140,7 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          audiosystem-passthrough
 Description: Base metapackage for adaptation-hybris-api29 adaptations (phone variant)
  This package depends on the required packages
- to allow Droidian work on API 29 devices.
+ to allow FuriOS work on API 29 devices.
 
 Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
@@ -150,7 +150,7 @@ Depends: adaptation-hybris-api29-phone (= ${binary:Version}),
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api29 adaptations (phone-dual-sim variant)
  This package depends on the required packages
- to allow Droidian work on API 29 devices.
+ to allow FuriOS work on API 29 devices.
 
 Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
@@ -158,13 +158,13 @@ Package: adaptation-hybris-api30
 Architecture: any
 Depends: adaptation-hybris-common (= ${binary:Version}),
          pulseaudio-config-droid,
-         droidian-quirks-api30,
+         furios-quirks-api30,
          pulseaudio-modules-droid-modern,
          bluebinder,
          timekeeper
 Description: Base metapackage for adaptation-hybris-api30 adaptations (standard variant)
  This package depends on the required packages
- to allow Droidian work on API 30 devices.
+ to allow FuriOS work on API 30 devices.
 
 Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
@@ -179,7 +179,7 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          audiosystem-passthrough
 Description: Base metapackage for adaptation-hybris-api30 adaptations (phone variant)
  This package depends on the required packages
- to allow Droidian work on API 30 devices.
+ to allow FuriOS work on API 30 devices.
 
 Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
@@ -189,7 +189,7 @@ Depends: adaptation-hybris-api30-phone (= ${binary:Version}),
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api30 adaptations (phone-dual-sim variant)
  This package depends on the required packages
- to allow Droidian work on API 30 devices.
+ to allow FuriOS work on API 30 devices.
 
 Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
@@ -197,13 +197,13 @@ Package: adaptation-hybris-api32
 Architecture: any
 Depends: adaptation-hybris-common (= ${binary:Version}),
          pulseaudio-config-droid,
-         droidian-quirks-api32,
+         furios-quirks-api32,
          pulseaudio-modules-droid-modern,
          bluebinder,
          timekeeper
 Description: Base metapackage for adaptation-hybris-api32 adaptations (standard variant)
  This package depends on the required packages
- to allow Droidian work on API 32 devices.
+ to allow FuriOS work on API 32 devices.
 
 Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
@@ -218,7 +218,7 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          audiosystem-passthrough
 Description: Base metapackage for adaptation-hybris-api32 adaptations (phone variant)
  This package depends on the required packages
- to allow Droidian work on API 32 devices.
+ to allow FuriOS work on API 32 devices.
 
 Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
@@ -228,7 +228,7 @@ Depends: adaptation-hybris-api32-phone (= ${binary:Version}),
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api32 adaptations (phone-dual-sim variant)
  This package depends on the required packages
- to allow Droidian work on API 32 devices.
+ to allow FuriOS work on API 32 devices.
 
 Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
@@ -236,13 +236,13 @@ Package: adaptation-hybris-api33
 Architecture: any
 Depends: adaptation-hybris-common (= ${binary:Version}),
          pulseaudio-config-droid,
-         droidian-quirks-api33,
+         furios-quirks-api33,
          pulseaudio-modules-droid-modern,
          bluebinder,
          timekeeper
 Description: Base metapackage for adaptation-hybris-api33 adaptations (standard variant)
  This package depends on the required packages
- to allow Droidian work on API 33 devices.
+ to allow FuriOS work on API 33 devices.
 
 Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
@@ -257,7 +257,7 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          audiosystem-passthrough
 Description: Base metapackage for adaptation-hybris-api33 adaptations (phone variant)
  This package depends on the required packages
- to allow Droidian work on API 33 devices.
+ to allow FuriOS work on API 33 devices.
 
 Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
@@ -267,4 +267,4 @@ Depends: adaptation-hybris-api33-phone (= ${binary:Version}),
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api33 adaptations (phone-dual-sim variant)
  This package depends on the required packages
- to allow Droidian work on API 33 devices.
+ to allow FuriOS work on API 33 devices.
