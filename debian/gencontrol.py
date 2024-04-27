@@ -14,7 +14,6 @@ COMMON_PACKAGES = [
 	"lxc-android",
 	"libhybris",
 	"libhybris-utils",
-	"udev-config-hybris",
 	"hadess-sensorfw-proxy",
 	"furios-quirks-hybris-gl",
 	"furios-quirks-qt-force-gles",
