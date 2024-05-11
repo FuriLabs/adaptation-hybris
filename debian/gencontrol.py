@@ -27,7 +27,7 @@ COMMON_PACKAGES = [
 	"flatpak-hybris",
 	"flatpak-extension-gl-hybris",
 	"flatpak-extension-gl-hybris-tls-padding",
-	"flatpak-extension-gl-hybris-droidian-workarounds",
+	"flatpak-extension-gl-hybris-furios-workarounds",
 ]
 
 COMMON_PHOSH = [
