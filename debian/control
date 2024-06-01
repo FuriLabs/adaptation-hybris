@@ -4,7 +4,7 @@
 Source: adaptation-hybris
 Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
 Section: misc
-Priority: optional
+Priority: required
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.5.0.3
 Vcs-Browser: https://github.com/furilabs/adaptation-hybris
