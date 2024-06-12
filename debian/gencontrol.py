@@ -20,7 +20,6 @@ COMMON_PACKAGES = [
 	"furios-quirks-qt-force-gles",
 	"furios-quirks-tls-padding",
 	"furios-quirks-xtables-legacy",
-	"furios-quirks-vulkan",
 	"gstreamer1.0-droid",
 	"package-sideload",
 	"flash-bootimage",
