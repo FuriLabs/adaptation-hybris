@@ -55,7 +55,9 @@ Depends: adaptation-hybris-common (= ${binary:Version}),
          ofono-scripts,
          ofono2mm,
          ofono-apndb-plugin,
-         lineageos-apn-conf
+         lineageos-apn-conf,
+         mmsd4ofono,
+         mmsd4ofono-scripts,
 Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (phone variant)
  This package depends on the required packages

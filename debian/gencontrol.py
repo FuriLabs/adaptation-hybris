@@ -44,6 +44,8 @@ COMMON_PHONE_PACKAGES = [
 	"ofono2mm",
 	"ofono-apndb-plugin",
 	"lineageos-apn-conf",
+	"mmsd4ofono",
+	"mmsd4ofono-scripts",
 ]
 
 # Devtools packages
