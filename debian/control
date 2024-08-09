@@ -10,14 +10,6 @@ Standards-Version: 4.5.0.3
 Vcs-Browser: https://github.com/furilabs/adaptation-hybris
 Vcs-Git: https://github.com/furilabs/adaptation-hybris
 
-Package: adaptation-hybris
-Architecture: any
-Pre-Depends: adaptation-hybris-common (= ${binary:Version}),
-             adaptation-hybris-phosh (= ${binary:Version})
-Description: Base metapackage for adaptation-hybris adaptations (transitional package)
- This is just a transitional package for adaptation-hybris-common.
- You can remove it.
-
 Package: adaptation-hybris-common
 Architecture: any
 Depends: furios-quirks-writable-image,
@@ -50,7 +42,7 @@ Description: Base metapackage for adaptation-hybris adaptations (common variant)
 
 Package: adaptation-hybris-phone
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
+Depends: adaptation-hybris-common,
          ofono,
          ofono-scripts,
          ofono2mm,
@@ -65,7 +57,7 @@ Description: Base metapackage for adaptation-hybris adaptations (phone variant)
 
 Package: adaptation-hybris-devtools
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
+Depends: adaptation-hybris-common,
          libhybris-test,
          hybris-usb
 Description: Base metapackage for adaptation-hybris adaptations (devtools variant)
@@ -84,7 +76,7 @@ Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
 Package: adaptation-hybris-api28
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
+Depends: adaptation-hybris-common,
          pulseaudio-config-droid,
          furios-quirks-api28,
          pulseaudio-modules-droid-jb2q,
@@ -98,9 +90,9 @@ Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
 Package: adaptation-hybris-api28-phone
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
-         adaptation-hybris-phone (= ${binary:Version}),
-         adaptation-hybris-api28 (= ${binary:Version}),
+Depends: adaptation-hybris-common,
+         adaptation-hybris-phone,
+         adaptation-hybris-api28,
          ofono-binder-plugin,
          ofono-configs-binder-common,
          pulseaudio-modules-droid-hidl,
@@ -113,7 +105,7 @@ Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
 Package: adaptation-hybris-api28-phone-dual-sim
 Architecture: any
-Depends: adaptation-hybris-api28-phone (= ${binary:Version}),
+Depends: adaptation-hybris-api28-phone,
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api28 adaptations (phone-dual-sim variant)
  This package depends on the required packages
@@ -123,7 +115,7 @@ Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
 Package: adaptation-hybris-api29
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
+Depends: adaptation-hybris-common,
          pulseaudio-config-droid,
          furios-quirks-api29,
          pulseaudio-modules-droid-jb2q,
@@ -137,9 +129,9 @@ Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
 Package: adaptation-hybris-api29-phone
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
-         adaptation-hybris-phone (= ${binary:Version}),
-         adaptation-hybris-api29 (= ${binary:Version}),
+Depends: adaptation-hybris-common,
+         adaptation-hybris-phone,
+         adaptation-hybris-api29,
          ofono-binder-plugin,
          ofono-configs-binder-common,
          pulseaudio-modules-droid-hidl,
@@ -152,7 +144,7 @@ Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
 Package: adaptation-hybris-api29-phone-dual-sim
 Architecture: any
-Depends: adaptation-hybris-api29-phone (= ${binary:Version}),
+Depends: adaptation-hybris-api29-phone,
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api29 adaptations (phone-dual-sim variant)
  This package depends on the required packages
@@ -162,7 +154,7 @@ Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
 Package: adaptation-hybris-api30
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
+Depends: adaptation-hybris-common,
          pulseaudio-config-droid,
          furios-quirks-api30,
          pulseaudio-modules-droid-modern,
@@ -176,9 +168,9 @@ Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
 Package: adaptation-hybris-api30-phone
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
-         adaptation-hybris-phone (= ${binary:Version}),
-         adaptation-hybris-api30 (= ${binary:Version}),
+Depends: adaptation-hybris-common,
+         adaptation-hybris-phone,
+         adaptation-hybris-api30,
          ofono-binder-plugin,
          ofono-configs-binder-common,
          pulseaudio-modules-droid-hidl,
@@ -191,7 +183,7 @@ Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
 Package: adaptation-hybris-api30-phone-dual-sim
 Architecture: any
-Depends: adaptation-hybris-api30-phone (= ${binary:Version}),
+Depends: adaptation-hybris-api30-phone,
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api30 adaptations (phone-dual-sim variant)
  This package depends on the required packages
@@ -201,7 +193,7 @@ Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
 Package: adaptation-hybris-api32
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
+Depends: adaptation-hybris-common,
          pulseaudio-config-droid,
          furios-quirks-api32,
          pulseaudio-modules-droid-modern,
@@ -215,9 +207,9 @@ Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
 Package: adaptation-hybris-api32-phone
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
-         adaptation-hybris-phone (= ${binary:Version}),
-         adaptation-hybris-api32 (= ${binary:Version}),
+Depends: adaptation-hybris-common,
+         adaptation-hybris-phone,
+         adaptation-hybris-api32,
          ofono-binder-plugin,
          ofono-configs-binder-common,
          pulseaudio-modules-droid-hidl,
@@ -230,7 +222,7 @@ Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
 Package: adaptation-hybris-api32-phone-dual-sim
 Architecture: any
-Depends: adaptation-hybris-api32-phone (= ${binary:Version}),
+Depends: adaptation-hybris-api32-phone,
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api32 adaptations (phone-dual-sim variant)
  This package depends on the required packages
@@ -240,7 +232,7 @@ Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
 Package: adaptation-hybris-api33
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
+Depends: adaptation-hybris-common,
          pulseaudio-config-droid,
          furios-quirks-api33,
          pulseaudio-modules-droid-modern,
@@ -254,9 +246,9 @@ Provides: adaptation-hybris-apispecific-phone
 Conflicts: adaptation-hybris-apispecific-phone
 Package: adaptation-hybris-api33-phone
 Architecture: any
-Depends: adaptation-hybris-common (= ${binary:Version}),
-         adaptation-hybris-phone (= ${binary:Version}),
-         adaptation-hybris-api33 (= ${binary:Version}),
+Depends: adaptation-hybris-common,
+         adaptation-hybris-phone,
+         adaptation-hybris-api33,
          ofono-binder-plugin,
          ofono-configs-binder-common,
          pulseaudio-modules-droid-hidl,
@@ -269,7 +261,7 @@ Provides: adaptation-hybris-apispecific-phone-dual-sim
 Conflicts: adaptation-hybris-apispecific-phone-dual-sim
 Package: adaptation-hybris-api33-phone-dual-sim
 Architecture: any
-Depends: adaptation-hybris-api33-phone (= ${binary:Version}),
+Depends: adaptation-hybris-api33-phone,
          ofono-configs-binder-dual-sim
 Description: Base metapackage for adaptation-hybris-api33 adaptations (phone-dual-sim variant)
  This package depends on the required packages

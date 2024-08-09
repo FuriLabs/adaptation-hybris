@@ -38,7 +38,7 @@ COMMON_PHOSH = [
 
 # Common packages for phones
 COMMON_PHONE_PACKAGES = [
-	"adaptation-hybris-common (= ${binary:Version})",
+	"adaptation-hybris-common",
 	"ofono",
 	"ofono-scripts",
 	"ofono2mm",
@@ -50,14 +50,14 @@ COMMON_PHONE_PACKAGES = [
 
 # Devtools packages
 COMMON_DEVTOOLS_PACKAGES = [
-	"adaptation-hybris-common (= ${binary:Version})",
+	"adaptation-hybris-common",
 	"libhybris-test",
 	"hybris-usb",
 ]
 
 # Common packages for api levels 16+
 COMMON_16_PACKAGES = [
-	"adaptation-hybris-common (= ${binary:Version})",
+	"adaptation-hybris-common",
 	"pulseaudio-config-droid",
 	"furios-quirks-api%(level)d",
 ]
@@ -80,9 +80,9 @@ COMMON_26_PACKAGES = [
 
 # Common phone packages for api levels 26+ (8+)
 COMMON_26_PHONE_PACKAGES = [
-	"adaptation-hybris-common (= ${binary:Version})",
-	"adaptation-hybris-phone (= ${binary:Version})",
-	"adaptation-hybris-api%(level)s (= ${binary:Version})",
+	"adaptation-hybris-common",
+	"adaptation-hybris-phone",
+	"adaptation-hybris-api%(level)s",
 	"ofono-binder-plugin",
 	"ofono-configs-binder-common",
 	"pulseaudio-modules-droid-hidl",
@@ -91,7 +91,7 @@ COMMON_26_PHONE_PACKAGES = [
 
 # Common phone packages for dual sim devices for api levels 26+ (8+)
 COMMON_26_DUAL_SIM_PACKAGES = [
-	"adaptation-hybris-api%(level)d-phone (= ${binary:Version})",
+	"adaptation-hybris-api%(level)d-phone",
 	"ofono-configs-binder-dual-sim",
 ]
 
