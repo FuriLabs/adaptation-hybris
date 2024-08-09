@@ -35,7 +35,7 @@ Depends: furios-quirks-writable-image,
          flatpak-extension-gl-hybris,
          flatpak-extension-gl-hybris-tls-padding,
          flatpak-extension-gl-hybris-furios-workarounds
-Essential: yes
+#Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (common variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.
@@ -50,7 +50,7 @@ Depends: adaptation-hybris-common,
          lineageos-apn-conf,
          mmsd4ofono,
          mmsd4ofono-scripts,
-Essential: yes
+#Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (phone variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.
@@ -67,7 +67,7 @@ Description: Base metapackage for adaptation-hybris adaptations (devtools varian
 Package: adaptation-hybris-phosh
 Architecture: any
 Depends: phosh-config-hwcomposer
-Essential: yes
+#Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (phosh variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.
