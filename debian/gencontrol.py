@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2022 Eugenio "g7" Paolantonio <me@medesimo.eu>
+# Copyright (C) 2025 Bardia Moshiri <bardia@furilabs.com>
 
 # TODO: Maybe use python-debian?
 
@@ -57,12 +58,8 @@ COMMON_DEVTOOLS_PACKAGES = [
 COMMON_16_PACKAGES = [
 	"adaptation-hybris-common",
 	"pulseaudio-config-droid",
+	"pipewire-config-droid",
 	"furios-quirks-api%(level)d",
-]
-
-# Common packages for api levels 16 through 29 (4.1 to 29)
-COMMON_16_29_PACKAGES = [
-	"pulseaudio-modules-droid-jb2q",
 ]
 
 # Common packages for api levels 30+ (11+)
@@ -99,21 +96,6 @@ SUPPORTED_APILEVELS = {
 		"phone"    : COMMON_PHONE_PACKAGES,
 		"devtools" : COMMON_DEVTOOLS_PACKAGES,
 		"phosh"    : COMMON_PHOSH,
-	},
-	28 : {
-		"standard"       : COMMON_16_PACKAGES + COMMON_16_29_PACKAGES + COMMON_26_PACKAGES,
-		"phone"          : COMMON_26_PHONE_PACKAGES,
-		"phone-dual-sim" : COMMON_26_DUAL_SIM_PACKAGES,
-	},
-	29 : {
-		"standard"       : COMMON_16_PACKAGES + COMMON_16_29_PACKAGES + COMMON_26_PACKAGES,
-		"phone"          : COMMON_26_PHONE_PACKAGES,
-		"phone-dual-sim" : COMMON_26_DUAL_SIM_PACKAGES,
-	},
-	30 : {
-		"standard"       : COMMON_16_PACKAGES + COMMON_30_PACKAGES + COMMON_26_PACKAGES,
-		"phone"          : COMMON_26_PHONE_PACKAGES,
-		"phone-dual-sim" : COMMON_26_DUAL_SIM_PACKAGES,
 	},
         32 : {
                 "standard"       : COMMON_16_PACKAGES + COMMON_30_PACKAGES + COMMON_26_PACKAGES,

@@ -6,7 +6,7 @@ Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
 Section: misc
 Priority: required
 Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.5.0.3
+Standards-Version: 4.7.0
 Vcs-Browser: https://github.com/furilabs/adaptation-hybris
 Vcs-Git: https://github.com/furilabs/adaptation-hybris
 
@@ -72,127 +72,11 @@ Description: Base metapackage for adaptation-hybris adaptations (phosh variant)
 
 Provides: adaptation-hybris-apispecific-standard
 Conflicts: adaptation-hybris-apispecific-standard
-Package: adaptation-hybris-api28
-Architecture: any
-Depends: adaptation-hybris-common,
-         pulseaudio-config-droid,
-         furios-quirks-api28,
-         pulseaudio-modules-droid-jb2q,
-         bluebinder,
-         timekeeper
-Description: Base metapackage for adaptation-hybris-api28 adaptations (standard variant)
- This package depends on the required packages
- to allow FuriOS work on API 28 devices.
-
-Provides: adaptation-hybris-apispecific-phone
-Conflicts: adaptation-hybris-apispecific-phone
-Package: adaptation-hybris-api28-phone
-Architecture: any
-Depends: adaptation-hybris-common,
-         adaptation-hybris-phone,
-         adaptation-hybris-api28,
-         ofono-binder-plugin,
-         ofono-configs-binder-common,
-         pulseaudio-modules-droid-hidl,
-         audiosystem-passthrough
-Description: Base metapackage for adaptation-hybris-api28 adaptations (phone variant)
- This package depends on the required packages
- to allow FuriOS work on API 28 devices.
-
-Provides: adaptation-hybris-apispecific-phone-dual-sim
-Conflicts: adaptation-hybris-apispecific-phone-dual-sim
-Package: adaptation-hybris-api28-phone-dual-sim
-Architecture: any
-Depends: adaptation-hybris-api28-phone,
-         ofono-configs-binder-dual-sim
-Description: Base metapackage for adaptation-hybris-api28 adaptations (phone-dual-sim variant)
- This package depends on the required packages
- to allow FuriOS work on API 28 devices.
-
-Provides: adaptation-hybris-apispecific-standard
-Conflicts: adaptation-hybris-apispecific-standard
-Package: adaptation-hybris-api29
-Architecture: any
-Depends: adaptation-hybris-common,
-         pulseaudio-config-droid,
-         furios-quirks-api29,
-         pulseaudio-modules-droid-jb2q,
-         bluebinder,
-         timekeeper
-Description: Base metapackage for adaptation-hybris-api29 adaptations (standard variant)
- This package depends on the required packages
- to allow FuriOS work on API 29 devices.
-
-Provides: adaptation-hybris-apispecific-phone
-Conflicts: adaptation-hybris-apispecific-phone
-Package: adaptation-hybris-api29-phone
-Architecture: any
-Depends: adaptation-hybris-common,
-         adaptation-hybris-phone,
-         adaptation-hybris-api29,
-         ofono-binder-plugin,
-         ofono-configs-binder-common,
-         pulseaudio-modules-droid-hidl,
-         audiosystem-passthrough
-Description: Base metapackage for adaptation-hybris-api29 adaptations (phone variant)
- This package depends on the required packages
- to allow FuriOS work on API 29 devices.
-
-Provides: adaptation-hybris-apispecific-phone-dual-sim
-Conflicts: adaptation-hybris-apispecific-phone-dual-sim
-Package: adaptation-hybris-api29-phone-dual-sim
-Architecture: any
-Depends: adaptation-hybris-api29-phone,
-         ofono-configs-binder-dual-sim
-Description: Base metapackage for adaptation-hybris-api29 adaptations (phone-dual-sim variant)
- This package depends on the required packages
- to allow FuriOS work on API 29 devices.
-
-Provides: adaptation-hybris-apispecific-standard
-Conflicts: adaptation-hybris-apispecific-standard
-Package: adaptation-hybris-api30
-Architecture: any
-Depends: adaptation-hybris-common,
-         pulseaudio-config-droid,
-         furios-quirks-api30,
-         pulseaudio-modules-droid-modern,
-         bluebinder,
-         timekeeper
-Description: Base metapackage for adaptation-hybris-api30 adaptations (standard variant)
- This package depends on the required packages
- to allow FuriOS work on API 30 devices.
-
-Provides: adaptation-hybris-apispecific-phone
-Conflicts: adaptation-hybris-apispecific-phone
-Package: adaptation-hybris-api30-phone
-Architecture: any
-Depends: adaptation-hybris-common,
-         adaptation-hybris-phone,
-         adaptation-hybris-api30,
-         ofono-binder-plugin,
-         ofono-configs-binder-common,
-         pulseaudio-modules-droid-hidl,
-         audiosystem-passthrough
-Description: Base metapackage for adaptation-hybris-api30 adaptations (phone variant)
- This package depends on the required packages
- to allow FuriOS work on API 30 devices.
-
-Provides: adaptation-hybris-apispecific-phone-dual-sim
-Conflicts: adaptation-hybris-apispecific-phone-dual-sim
-Package: adaptation-hybris-api30-phone-dual-sim
-Architecture: any
-Depends: adaptation-hybris-api30-phone,
-         ofono-configs-binder-dual-sim
-Description: Base metapackage for adaptation-hybris-api30 adaptations (phone-dual-sim variant)
- This package depends on the required packages
- to allow FuriOS work on API 30 devices.
-
-Provides: adaptation-hybris-apispecific-standard
-Conflicts: adaptation-hybris-apispecific-standard
 Package: adaptation-hybris-api32
 Architecture: any
 Depends: adaptation-hybris-common,
          pulseaudio-config-droid,
+         pipewire-config-droid,
          furios-quirks-api32,
          pulseaudio-modules-droid-modern,
          bluebinder,
@@ -232,6 +116,7 @@ Package: adaptation-hybris-api33
 Architecture: any
 Depends: adaptation-hybris-common,
          pulseaudio-config-droid,
+         pipewire-config-droid,
          furios-quirks-api33,
          pulseaudio-modules-droid-modern,
          bluebinder,
