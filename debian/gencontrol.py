@@ -23,7 +23,6 @@ COMMON_PACKAGES = [
 	"furios-quirks-xtables-legacy",
 	"furios-quirks-vulkan",
 	"gstreamer1.0-droid",
-	"package-sideload",
 	"flash-bootimage",
 	"furios-quirks-device",
 	"flashlightd",
