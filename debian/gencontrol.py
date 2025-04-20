@@ -31,6 +31,8 @@ COMMON_PACKAGES = [
 	"flatpak-extension-gl-hybris",
 	"flatpak-extension-gl-hybris-tls-padding",
 	"flatpak-extension-gl-hybris-furios-workarounds",
+	"gstreamer1.0-pwcompat",
+	"flatpak-extension-gstreamer-pwcompat",
 ]
 
 COMMON_PHOSH = [
