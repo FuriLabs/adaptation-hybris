@@ -82,7 +82,6 @@ COMMON_26_PHONE_PACKAGES = [
 	"ofono-binder-plugin",
 	"ofono-configs-binder-common",
 	"pulseaudio-modules-droid-hidl",
-	"audiosystem-passthrough",
 ]
 
 # Common phone packages for dual sim devices for api levels 26+ (8+)
