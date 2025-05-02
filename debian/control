@@ -95,7 +95,6 @@ Depends: adaptation-hybris-common,
          adaptation-hybris-api32,
          ofono-binder-plugin,
          ofono-configs-binder-common,
-         pulseaudio-modules-droid-hidl,
 Description: Base metapackage for adaptation-hybris-api32 adaptations (phone variant)
  This package depends on the required packages
  to allow FuriOS work on API 32 devices.
@@ -134,7 +133,6 @@ Depends: adaptation-hybris-common,
          adaptation-hybris-api33,
          ofono-binder-plugin,
          ofono-configs-binder-common,
-         pulseaudio-modules-droid-hidl,
 Description: Base metapackage for adaptation-hybris-api33 adaptations (phone variant)
  This package depends on the required packages
  to allow FuriOS work on API 33 devices.
