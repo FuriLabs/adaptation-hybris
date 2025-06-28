@@ -4,7 +4,7 @@
 Source: adaptation-hybris
 Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
 Section: misc
-Priority: required
+Priority: optional
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.7.0
 Vcs-Browser: https://github.com/furilabs/adaptation-hybris
@@ -36,7 +36,6 @@ Depends: furios-quirks-writable-image,
          flatpak-extension-gl-hybris-furios-workarounds,
          gstreamer1.0-pwcompat,
          flatpak-extension-gstreamer-pwcompat,
-Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (common variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.
@@ -49,7 +48,6 @@ Depends: adaptation-hybris-common,
          ofono2mm,
          mmsd4ofono,
          mmsd4ofono-scripts,
-Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (phone variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.
@@ -66,7 +64,6 @@ Description: Base metapackage for adaptation-hybris adaptations (devtools varian
 Package: adaptation-hybris-phosh
 Architecture: any
 Depends: phosh-config-hwcomposer
-Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (phosh variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.
