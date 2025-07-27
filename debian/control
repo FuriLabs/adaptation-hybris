@@ -58,7 +58,7 @@ Package: adaptation-hybris-devtools
 Architecture: any
 Depends: adaptation-hybris-common,
          libhybris-test,
-         hybris-usb
+         usb-tethering,
 Description: Base metapackage for adaptation-hybris adaptations (devtools variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.

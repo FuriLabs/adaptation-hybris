@@ -52,7 +52,7 @@ COMMON_PHONE_PACKAGES = [
 COMMON_DEVTOOLS_PACKAGES = [
 	"adaptation-hybris-common",
 	"libhybris-test",
-	"hybris-usb",
+	"usb-tethering",
 ]
 
 # Common packages for api levels 16+
