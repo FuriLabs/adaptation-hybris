@@ -46,9 +46,11 @@ Architecture: any
 Depends: adaptation-hybris-common,
          ofono,
          ofono-scripts,
+         ofonoctl,
          ofono2mm,
          mmsd4ofono,
          mmsd4ofono-scripts,
+         mmscli,
 Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (phone variant)
  This package depends on the required packages
@@ -59,6 +61,7 @@ Architecture: any
 Depends: adaptation-hybris-common,
          libhybris-test,
          usb-tethering,
+         gstreamer1.0-droid-tools,
 Description: Base metapackage for adaptation-hybris adaptations (devtools variant)
  This package depends on the required packages
  to allow FuriOS work on Android devices.

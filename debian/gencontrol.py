@@ -43,9 +43,11 @@ COMMON_PHONE_PACKAGES = [
 	"adaptation-hybris-common",
 	"ofono",
 	"ofono-scripts",
+	"ofonoctl"
 	"ofono2mm",
 	"mmsd4ofono",
 	"mmsd4ofono-scripts",
+	"mmscli",
 ]
 
 # Devtools packages
@@ -53,6 +55,7 @@ COMMON_DEVTOOLS_PACKAGES = [
 	"adaptation-hybris-common",
 	"libhybris-test",
 	"usb-tethering",
+	"gstreamer1.0-droid-tools",
 ]
 
 # Common packages for api levels 16+
