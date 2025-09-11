@@ -51,6 +51,7 @@ Depends: adaptation-hybris-common,
          mmsd4ofono,
          mmsd4ofono-scripts,
          mmscli,
+         ofono-toned,
 Essential: yes
 Description: Base metapackage for adaptation-hybris adaptations (phone variant)
  This package depends on the required packages
