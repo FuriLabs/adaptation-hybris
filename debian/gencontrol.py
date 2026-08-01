@@ -46,7 +46,6 @@ COMMON_PHONE_PACKAGES = [
 	"ofono2mm",
 	"mmsd4ofono",
 	"mmscli",
-	"ofono-toned",
 ]
 
 # Devtools packages
