@@ -44,6 +44,7 @@ COMMON_PHONE_PACKAGES = [
 	"ofono-scripts",
 	"ofonoctl"
 	"ofono2mm",
+	"clatd-gsm",
 	"mmsd4ofono",
 	"mmscli",
 ]

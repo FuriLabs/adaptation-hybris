@@ -45,6 +45,7 @@ Depends: adaptation-hybris-common,
          ofono-scripts,
          ofonoctl,
          ofono2mm,
+         clatd-gsm,
          mmsd4ofono,
          mmscli,
 Essential: yes
